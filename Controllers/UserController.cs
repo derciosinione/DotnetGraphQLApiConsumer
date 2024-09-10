@@ -16,6 +16,14 @@ namespace WebApiGraphQLClient.Controllers
 			var response = await _userService.GetAllUsersAsync();
 			return Ok(response);
 		}
+		
+		
+		[HttpGet("with-strawberry-shake")]
+		public async Task<IActionResult> GetUsersWithStrawberryShake()
+		{
+			var response = await _userService.GetUsersWithStrawberryShake();
+			return Ok(response);
+		}
 
 
 		[HttpGet("auth")]
@@ -34,10 +42,4 @@ namespace WebApiGraphQLClient.Controllers
 		}
 
 	}
-}
-
-
-public record AuthRequest
-{
-	public required string token { get; set; }
 }

@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[6.1.0, )"
             },
+            "StrawberryShake.Server": {
+              "target": "Package",
+              "version": "[13.9.12, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"

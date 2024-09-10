@@ -1,0 +1,15 @@
+query GetAllUsers {
+  allUsers(last: 4, order: { createdAt: DESC }) {
+    nodes {
+      ...UserFields
+    }
+  }
+}
+
+
+fragment UserFields on UserType {
+  id
+  email
+  createdAt
+}
+
