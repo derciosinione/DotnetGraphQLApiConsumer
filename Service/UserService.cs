@@ -12,7 +12,6 @@ namespace WebApiGraphQLClient.Service;
 public class UserService : IUserService
 {
 	private readonly GraphQLHttpClient _client;
-	// private readonly JsonSerializerOptions _options;
 	private readonly IR2YClient _r2YClient;
 	private readonly IMemoryCache _cache;
 
@@ -21,7 +20,6 @@ public class UserService : IUserService
 		_client = client;
 		_r2YClient = r2YClient;
 		_cache = cache;
-		// _options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
 	}
 
 
